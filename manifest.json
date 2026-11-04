@@ -1,0 +1,17 @@
+{
+  "name": "cs-infra",
+  "version": "0.1.0",
+  "owner": "Tokenaissance",
+  "updated_at": "2026-11-04",
+  "status": "candidate",
+  "maturity_tier": "production",
+  "context_budget_tier": "production",
+  "upstream_inspiration": "Google Rust Style Guide",
+  "release_gates": [
+    "valid frontmatter",
+    "trigger eval pass",
+    "design checklist complete",
+    "Rust API reference complete",
+    "source and gap inventory"
+  ]
+}

@@ -1,0 +1,14 @@
+interface:
+  display_name: "CS Infra"
+  short_description: "Review CS infrastructure design and Rust implementation."
+  default_prompt: "Review this infrastructure design for failure domains, idempotency, bounded resources, observability, capacity, failover, and on-call readiness."
+  example_prompts:
+    - "Review this control plane design for failure domains and idempotency."
+    - "Review this Rust sandbox API for unsafe, errors, and extensibility."
+    - "Write a production-readiness checklist for a storage service."
+compatibility:
+  adapter_targets:
+    - openai
+    - claude
+    - generic
+    - agent-skills-compatible

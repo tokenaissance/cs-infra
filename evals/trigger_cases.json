@@ -1,0 +1,29 @@
+{
+  "recommended_threshold": 0.34,
+  "description_required_concepts": ["infra", "review", "rust"],
+  "positive_concepts": {
+    "infra": ["infra", "infrastructure", "control plane", "distributed", "storage", "scheduler", "sandbox", "runtime"],
+    "review": ["review", "design", "checklist", "audit", "production readiness"],
+    "rust": ["rust", "api", "unsafe", "ownership", "error handling"],
+    "reliability": ["failure", "idempotency", "slo", "failover", "capacity", "on-call", "backpressure", "consistency"]
+  },
+  "negative_patterns": ["css", "marketing", "tutorial", "recipe", "resume"],
+  "should_trigger": [
+    "Review this control plane design for failure domains and idempotency.",
+    "帮我 review 这个分布式调度器的 capacity、failover 和 on-call 设计。",
+    "Review this Rust sandbox API for unsafe, error handling, and extensibility.",
+    "Write a production readiness checklist for a storage service.",
+    "Audit this agent runtime for bounded resources and observability."
+  ],
+  "should_not_trigger": [
+    "Fix the CSS margin on this landing page.",
+    "Write a product launch marketing email.",
+    "Give me a Rust syntax tutorial for beginners.",
+    "Create a dinner recipe."
+  ],
+  "near_neighbor": [
+    "Review my React component props for accessibility.",
+    "Explain Rust ownership syntax with examples.",
+    "Design a marketing dashboard layout."
+  ]
+}
