@@ -1,0 +1,27 @@
+{
+  "package": {
+    "name": "cs-infra",
+    "version": "0.1.0",
+    "mode": "production",
+    "description": "Review CS infrastructure design and Rust implementation."
+  },
+  "intent": {
+    "job": "Review infrastructure design and Rust code for failure domains, idempotency, bounded resources, observability, capacity, failover, and on-call readiness.",
+    "users": ["infra engineers", "SREs", "systems engineers", "reviewers"],
+    "outputs": ["verdict", "P0/P1 findings", "missing evidence", "checklist coverage"]
+  },
+  "boundaries": {
+    "in_scope": ["control planes", "schedulers", "storage", "sandboxes", "agent runtimes", "Rust infra code"],
+    "out_of_scope": ["general tutorials", "UI/product features", "pentesting", "compliance certification"]
+  },
+  "evidence": {
+    "prior_art": "reports/prior-art-research.md",
+    "trigger_eval": "reports/trigger-eval.json",
+    "creation_handoff": "reports/creation-handoff.md"
+  },
+  "permissions": {
+    "filesystem": "read-only review",
+    "network": "none",
+    "secrets": "none"
+  }
+}
